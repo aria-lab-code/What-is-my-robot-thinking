@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [Overview](#overview)
+- [Abstract](#Abstract)
 - [System Requirements](#system-requirements)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
@@ -10,16 +10,9 @@
 
 ---
 
-## Overview
+## Abstract
 
-This package implements a teleoperation system for the Kinova Gen3 robotic arm with integrated visual and auditory feedback mechanisms. It is designed for conducting human-robot interaction studies that investigate how different feedback modalities affect operator trust and task performance.
-
-The system uses:
-- **YOLOv11** for real-time object detection
-- **RealSense cameras** for RGB-D sensing (end-effector, scene, and recording perspectives)
-- **Xbox controller** for robot teleoperation
-- **VOSA (Visual Only Shared Autonomy)** for assistive manipulation
-- **Multiple feedback modalities** (visual rich, visual sparse, auditory rich, auditory sparse)
+Assistive robots operating under shared autonomy must balance user control with autonomous assistance. Because robot actions depend on internal intent inference that is not directly observable, mismatches between inferred and intended goals can undermine coordination and trust. We investigate how interface-level transparency—feedback modality (visual vs. auditory) and information richness (sparse vs. rich)—shapes interaction in a vision-based shared autonomy system. In a user study (N=25) across two assistive manipulation tasks, we evaluate how these designs influence coordination and trust. Providing feedback significantly improves intent alignment and reduces corrective intervention, indicating that making the inferred goal legible accelerates convergence in shared control. Participants preferred visual over auditory feedback, while preferences for sparse versus rich information depended on task complexity. We also found that revealing the full belief distribution did not consistently improve alignment or trust. Together, these findings indicate that effective transparency enhances coordination primarily through goal legibility, while trust depends on task-appropriate information exposure rather than maximal disclosure. Based on these results, we outline guidelines for designing transparent shared autonomy systems.
 
 ---
 
@@ -30,9 +23,9 @@ The system uses:
 - **Robot**: Kinova Gen3 robotic arm (6 or 7 DOF)
 - **Gripper**: Robotiq 2F-85 gripper
 - **Cameras**: 3x Intel RealSense D435/D455 cameras
-  - End-effector camera (serial: `247122071167`)
-  - Environment recording camera (serial: `246422070578`)
-  - Scene camera (serial: `243322074721`)
+  - End-effector camera
+  - Environment recording camera
+  - Scene camera
 - **Controller**: Xbox controller (or compatible joystick)
 - **Compute**: Ubuntu Linux machine with NVIDIA GPU
 
@@ -200,7 +193,7 @@ Specific configuration for familiarity training tasks.
 - **Dual detection**: Wrist camera (manipulation) + scene camera (awareness)
 - **Confidence scoring**: Each detection includes confidence metric
 
-### VOSA (Visual Object-centric Shared Autonomy)
+### VOSA (Vision Only Shared Autonomy)
 - Assists operator by suggesting optimal grasp locations
 - Computes goal alignment scores
 - Adapts to different task types (top-down sorting vs. shelving)
