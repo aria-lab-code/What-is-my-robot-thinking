@@ -6,7 +6,6 @@
 - [Quick Start](#quick-start)
 - [Package Structure](#package-structure)
 - [Launch Files](#launch-files)
-- [Key Components](#key-components)
 
 ---
 
@@ -173,26 +172,6 @@ Simplified teleoperation without feedback systems. Useful for:
 
 ### `familiarity.launch`
 Specific configuration for familiarity training tasks.
-
----
-
-## Key Components
-
-### Object Detection
-- **YOLOv11**: Custom trained model for task-specific objects
-- **Dual detection**: Wrist camera (manipulation) + scene camera (awareness)
-- **Confidence scoring**: Each detection includes confidence metric
-
-### VOSA (Vision Only Shared Autonomy)
-- Assists operator by suggesting optimal grasp locations
-- Computes goal alignment scores
-- Adapts to different task types (top-down sorting vs. shelving)
-
-### Feedback Modalities
-- **Visual Rich**: All detected objects with bounding boxes and confidence
-- **Visual Sparse**: Only highest confidence object highlighted
-- **Auditory Rich**: Verbal descriptions of all detected objects
-- **Auditory Sparse**: Alerts for highest confidence object only
 
 ---
 
