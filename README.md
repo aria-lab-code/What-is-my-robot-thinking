@@ -94,7 +94,7 @@ Connect Xbox controller via USB. Verify device path (default: `/dev/input/js1`).
 roslaunch trust_and_transparency direct_teleop.launch
 ```
 
-### Launch experiment**:
+### Launch experiment:
    ```bash
    roslaunch trust_and_transparency trust_feedback.launch \
        task:=sorting \
