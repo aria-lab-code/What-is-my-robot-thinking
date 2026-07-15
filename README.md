@@ -79,10 +79,6 @@ Assistive robots operating under shared autonomy must balance user control with 
 
 ---
 
-
-### Camera Calibration
-The package includes automated camera calibration.
-
 ### Robot Connection
 Connect the Kinova arm via Ethernet and configure the IP address (default: `192.168.1.10`).
 
