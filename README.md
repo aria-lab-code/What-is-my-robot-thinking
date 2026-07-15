@@ -7,7 +7,6 @@
 - [Package Structure](#package-structure)
 - [Launch Files](#launch-files)
 - [Key Components](#key-components)
-- [User Study Protocol](#user-study-protocol)
 
 ---
 
@@ -213,17 +212,6 @@ Specific configuration for familiarity training tasks.
 - **Auditory Sparse**: Alerts for highest confidence object only
 
 ---
-
-## User Study Protocol
-
-### Participant Initialization
-```bash
-python src/user_study/user_study.py
-```
-Creates:
-- Unique participant ID
-- Randomized treatment order (for within-subjects design)
-- Results directory structure
 
 ### Running Trials
 ```bash
