@@ -53,7 +53,7 @@ Assistive robots operating under shared autonomy must balance user control with 
 
 2. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/trust_and_transparency.git
+   git clone https://github.com/Atharv-B/What-is-my-robot-thinking.git
    ```
 
 3. **Install ROS dependencies**:
