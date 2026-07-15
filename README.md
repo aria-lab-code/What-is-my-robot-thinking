@@ -94,19 +94,13 @@ Connect Xbox controller via USB. Verify device path (default: `/dev/input/js1`).
 roslaunch trust_and_transparency direct_teleop.launch
 ```
 
-### Run User Study Experiment
-1. **Initialize participant session**:
-   ```bash
-   python src/user_study/user_study.py
-   ```
-   This generates a unique participant ID and randomizes treatment order.
-
-2. **Launch experiment**:
+### Launch experiment**:
    ```bash
    roslaunch trust_and_transparency trust_feedback.launch \
        task:=sorting \
        treatment:=C \
        feedback_type:=visual_rich
+
    ```
 
 ### Available Parameters
